@@ -8,7 +8,7 @@ installers returned HTTP 200. Added concise customer-facing App polish notes in
 release-notes.html; updated sitemap.xml and matching middleware dates for the
 homepage and release notes. Daniel additionally approved correcting the existing
 /grok header date to September 14 to match its existing sitemap date and unblock
-the crawl-freshness check. No /grok content changed.
+the crawl-freshness check. Updated the two matching Last-Modified test expectations; no /grok content changed.
 
 Desktop 5.16.95 artifacts and updater feeds are published at both download root
 and updates/. All 16 public objects passed byte/size comparisons with the tested
