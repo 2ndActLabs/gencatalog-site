@@ -1,5 +1,29 @@
 # GenCatalog Site Development Log
 
+
+## 2026-09-22 — Desktop 5.16.95 release surfaces
+
+Updated index.html and get.html using scripts/update-version.sh after both final
+installers returned HTTP 200. Added concise customer-facing App polish notes in
+release-notes.html; updated sitemap.xml and matching middleware dates for the
+homepage and release notes. Daniel additionally approved correcting the existing
+/grok header date to September 14 to match its existing sitemap date and unblock
+the crawl-freshness check. No /grok content changed.
+
+Desktop 5.16.95 artifacts and updater feeds are published at both download root
+and updates/. All 16 public objects passed byte/size comparisons with the tested
+local files; release evidence is /Users/danieldavis/Dev/builds/release-5-16-95/.
+Mac universal signing/notarization/staples and packaged parity passed. Windows
+NSIS installation and real app/server upload checks passed under Wine; physical
+Windows 11 acceptance remains pending. Extension 5.137 is prepared separately,
+not submitted/published, and is not described as a public extension release here.
+
+Validation: version guard, crawl freshness, HTML validator and diff checks pass.
+The original site checkout's unrelated changes are preserved; this release uses
+its clean linked worktree. Next: merge this site PR, verify the matching Pages
+production deployment and canonical homepage/get/release-notes, then remove the
+clean release worktree. Codex owns this publication verification.
+
 ---
 
 ## 2026-08-03 — Rebuild the Grok page around creative ownership
