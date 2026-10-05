@@ -1,5 +1,12 @@
 # GenCatalog Site Development Log
 
+## 2026-10-05 — Grok source and account-check support guidance
+
+Authorized support update: explain the three current source labels by use case, ordinary project chats, regular scans versus account checks, existing-item preservation, recovery limits, and sequential account checks. 5.140 is described as submitted with publication unconfirmed; no live Agent or customer acceptance claim. Labels and behavior checked against extension/popup.js and shared/grok-source-scope.js on GenCatalog main. Reused existing support list and note styles; no layout or dependency changes.
+
+Changed support.html, its sitemap lastmod, and this DEVLOG. Based on current origin/main in an isolated checkout because the primary site checkout contains unrelated changes, including support.html; the older support-grok-settings checkout did not return a status and was left untouched. Validation PASS: crawl freshness (26 pages), HTML cache-validator regression, version alignment and live Mac/Windows download URLs, diff whitespace, and Chromium at 1440px and 390px with no horizontal overflow and both new anchors present. Mobile screenshot reviewed. Publication will follow the normal main-branch Pages deployment; confirm the canonical support URL after merge.
+
+
 ## 2026-10-05 — Weekly Search Console CTR tune
 
 ### Evidence

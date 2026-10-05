@@ -516,7 +516,7 @@
             <div class="support-search-results" id="support-search-results"></div>
             <div class="support-search-status" id="support-search-status" role="status" aria-live="polite"></div>
         </form>
-        <div class="note" style="margin-top:-24px;margin-bottom:34px;">Updated August 2026 with Dzine project scanning and bulk import, Grok reference-image browsing and repair, Arcana Labs support, ComfyUI output imports, fuller embedded workflow metadata and LoRA display, Rogue Studio support, local media import, Gemini support, Private Vault encryption, privacy tools, GPT Image support, Grok favorites recovery, missing saved images or videos guidance, bulk download, backup, and metadata-preservation workflows.</div>
+        <div class="note" style="margin-top:-24px;margin-bottom:34px;">Updated October 2026 with Grok source-selection and account-check guidance, Dzine project scanning and bulk import, Grok reference-image browsing and repair, Arcana Labs support, ComfyUI output imports, fuller embedded workflow metadata and LoRA display, Rogue Studio support, local media import, Gemini support, Private Vault encryption, privacy tools, GPT Image support, Grok favorites recovery, missing saved images or videos guidance, bulk download, backup, and metadata-preservation workflows.</div>
 
         <div class="section" id="popular-grok-workflows" style="margin-bottom:48px;">
             <h2>Popular Grok workflows</h2>
@@ -665,20 +665,31 @@
             <p>When viewing any Grok Imagine generation, a blue GenCatalog save button (⊞ grid icon) appears on the media. Click it to save instantly. The button shows a spinner while saving, a green checkmark on success, or orange if it's already in your catalog.</p>
             <div class="tip"><strong>Tip:</strong> Saving from a detail page captures the most complete metadata including the full prompt. Grid view saves also work but may capture less metadata.</div>
 
+            <h3 id="grok-source-options" style="scroll-margin-top:96px;">Choose What You Want to Import</h3>
+            <p>On Grok, open the GenCatalog extension, then <strong>Settings → Download options → Grok source</strong>. Choose the source that matches how you create:</p>
+            <ul>
+                <li><strong>Imagine and Agent Mode creations:</strong> choose <strong>Grok Image + Agent Mode</strong>. This checks Grok's generated-media library without scanning the chat-media feed.</li>
+                <li><strong>Regular chat creations:</strong> choose <strong>Chat boxes only</strong>. This checks the chat media Grok makes available, rather than the Imagine and Agent Mode library.</li>
+                <li><strong>A mix of both:</strong> choose <strong>All Grok media</strong> for the broadest available scan.</li>
+            </ul>
+            <p><strong>What about projects?</strong> A project is a place to organize conversations, not a separate import choice. An image created in an ordinary project chat is still chat media; placing it in a project does not make it an Imagine or Agent Mode creation.</p>
+            <p>These choices control bulk scans, not individual save buttons. The selection is remembered. After changing it, run a new scan. Changing the source does not remove anything already saved in your catalog.</p>
+            <div class="note"><strong>Project-chat filtering update:</strong> Extension 5.140 has been submitted to the Chrome Web Store and is awaiting publication confirmation. It improves filtering of ordinary chat images that Grok also lists in its generated-media library. Source separation depends on the information Grok provides; some items may still be included when their origin cannot be determined.</div>
+
             <h3>Bulk Downloading Your Favorites</h3>
             <div class="steps">
                 <div class="step">
                     <div class="step-num">1</div>
                     <div class="step-body">
                         <strong>Open the extension popup on grok.com</strong>
-                        <p>Make sure you're logged into your Grok account.</p>
+                        <p>Keep the GenCatalog desktop app running, sign into the Grok account you want to scan, and choose your <a href="#grok-source-options">Grok source</a> in the extension Settings.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-num">2</div>
                     <div class="step-body">
                         <strong>Click the Grok tab → "Scan Favorites"</strong>
-                        <p>GenCatalog scans all your favorites and compares against your existing catalog. You'll see: total favorites / already saved / new to download / previously deleted (skipped automatically).</p>
+                        <p>GenCatalog checks the selected Grok sources and compares the results with your catalog. Review the counts for already saved items, new items, and previously deleted items before downloading.</p>
                     </div>
                 </div>
                 <div class="step">
@@ -697,8 +708,16 @@
                 </div>
             </div>
 
+            <h3 id="grok-account-check" style="scroll-margin-top:96px;">Check for Missing Items in This Account</h3>
+            <p>Use <strong>Settings → Check this Grok account</strong> when you want GenCatalog to check for missing media in the account currently signed into Grok and download it into your catalog. This is a separate action from the regular <strong>Scan Favorites → Download</strong> flow; both use your selected <strong>Grok source</strong>.</p>
+            <p>Existing files and intentional exclusions are preserved. Keep GenCatalog and the Grok tab open, and stay signed into the same account until the check finishes. You can close the extension popup.</p>
+
+            <h3>Older and Removed Media</h3>
+            <p>Leave <strong>Settings → Include older and removed items</strong> off for normal imports. Turn it on when you want to try retrieving older versions or items Grok marks as removed. GenCatalog can only download files Grok still makes accessible; permanently deleted files cannot be recovered.</p>
+            <p>This option does not override items you intentionally excluded through GenCatalog, and it does not clean up previously imported items. Review unwanted catalog items individually; do not delete from Grok just to change what your next scan imports.</p>
+
             <h3>Multiple Grok Accounts</h3>
-            <p>GenCatalog supports saving from multiple Grok accounts into a single catalog. Each item is automatically tagged with the account it came from, so you can filter your catalog by account. To save from another account: log out of Grok, log in to your second account, and use the extension as normal.</p>
+            <p>GenCatalog supports saving from multiple Grok accounts into a single catalog. Each item is automatically tagged with the account it came from, so you can filter your catalog by account. Finish the current account's scan or check before switching accounts. Then sign into the next account, confirm your Grok source selection, and scan or check that account separately.</p>
 
             <h3 id="grok-reference-repair" style="scroll-margin-top:96px;">Keeping Original Grok Reference Images Local</h3>
             <p>Grok may expose an uploaded or source image through an account-protected online link. GenCatalog uses that exact image when it can and can store an exact local copy beside your catalog. It does not substitute a generated result or extract a frame from a derived video.</p>
