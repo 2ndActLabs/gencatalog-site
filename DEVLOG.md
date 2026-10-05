@@ -1,5 +1,37 @@
 # GenCatalog Site Development Log
 
+## 2026-10-05 — Weekly Search Console CTR tune
+
+### Evidence
+- Google Search Console access succeeded through the GTechAgronomy profile for
+  `sc-domain:gencatalog.app`. The latest 3-month Search results window covered
+  July 4-October 3, 2026 and showed 1.21K clicks, 80.7K impressions, 1.5% CTR,
+  and average position 6.9.
+- `/blog-manage-grok-favorites` had 27 clicks, 7.62K impressions, 0.4% CTR, and
+  average position 7.6. Page-filtered queries were concentrated around Grok
+  favorites, Grok Imagine favorites, access/location, and disappeared-favorites
+  wording rather than the older "xAI" title phrasing.
+
+### Changes
+- Reworded `/blog-manage-grok-favorites` title, description, social metadata,
+  Article JSON-LD, H1, and intro answer toward finding, saving, and clearing
+  Grok Imagine favorites safely.
+- Aligned internal anchor text from guide/support/related-link surfaces and
+  updated sitemap plus middleware `Last-Modified` dates for each touched
+  indexable page.
+
+### Validation
+- Passed `xmllint --noout sitemap.xml`, `node scripts/test-html-validator.mjs`,
+  `node scripts/check-crawl-freshness.mjs`, `scripts/update-version.sh --check`,
+  targeted JSON-LD parsing for the touched pages, internal link/asset target
+  checks, and `git diff --check`.
+
+### Status
+- Ready to commit and push from clean worktree
+  `/tmp/gencatalog-site-seo-20261005.mtneZx`; the original checkout remains
+  untouched.
+
+---
 
 ## 2026-09-22 — Desktop 5.16.95 release surfaces
 
