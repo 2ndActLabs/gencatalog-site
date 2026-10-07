@@ -1,3 +1,11 @@
+## 2026-10-07 — Grok 5.140 availability and customer closeout
+
+Live Chrome Web Store HTML independently shows version 5.140, updated October 5; the search-rendered cached page still showed 5.139, so it was not used as current evidence. Updated only the support availability sentence and its sitemap/Last-Modified dates. Existing origin-unknown limitation remains intact.
+
+Steve confirmed installed 5.140 and said the problem seems solved in Gmail message 1a11467bb830a685 (October 7 03:28 UTC). Reply 1a1147437ef2060e was independently SENT verified; acknowledged recurrence concerns, explained regression coverage without promising no future breakage, and discouraged unnecessary catalog deletion/rebuild. This is customer-reported acceptance, not an independent full live Agent scan. No new extension artifact: verified 5.140 ZIP remains /Users/danieldavis/Dev/builds/GenCatalog-Extension-v5.140.zip, SHA256 c5897ea38fc3cf13e3e94df5da14bb477dc16734d06646acb96cfb1f7da4a0e7. Extension PR242 and included PR241 already merged; unrelated ChatGPT badge work is separate.
+
+Validation: crawl freshness, HTML validator, version-surface/artifact check and diff whitespace check passed. Deployment and canonical support readback remain required before monitor closure. This authorized support closeout preserves the dirty primary checkout and all unrelated work.
+
 # GenCatalog Site Development Log
 
 ## 2026-10-05 — Grok source and account-check support guidance
