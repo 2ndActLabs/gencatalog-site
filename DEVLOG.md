@@ -1,3 +1,20 @@
+## 2026-10-15 — Approved extension release notes
+
+Daniel confirmed extension 5.143 is live and approved publishing the reviewed
+5.143 entry and September–October retrospective. Added the exact approved copy
+to release-notes.html using existing page styles and updated only that page's
+sitemap lastmod and matching Last-Modified response date. Retrospective describes cumulative versions 5.133–5.142 without
+invented per-version publication dates. No desktop version change. Source prepared
+from fresh origin/main in a temporary clone because the dirty primary checkout's
+pack file failed during linked-worktree creation; primary edits are preserved.
+Checks pass: HTML middleware validator, crawl freshness (26 indexable pages),
+version/artifact check (both desktop downloads HTTP 200), sitemap XML and diff
+whitespace. Isolated Chromium at 390px and 1440px confirms both entries and no
+horizontal overflow. Mobile inspection caught unstyled list markers; use existing
+paragraph styling for the approved wording. Cloudflare OAuth identity verified.
+Publication uses the existing main-branch Pages deployment and cache-purge flow;
+canonical verification follows the push.
+
 ## 2026-10-07 — Grok 5.140 availability and customer closeout
 
 Live Chrome Web Store HTML independently shows version 5.140, updated October 5; the search-rendered cached page still showed 5.139, so it was not used as current evidence. Updated only the support availability sentence and its sitemap/Last-Modified dates. Existing origin-unknown limitation remains intact.
@@ -1807,7 +1824,7 @@ version updater correctly produced no sitemap diff.
 ### What Changed
 - Updated `/blog-grok-favorites-disappeared` around Search Console queries for Grok favorites not loading, not showing, unable to load, and saved images disappeared.
 - Added a May 2026 update section near the top of the article.
-- Refreshed the article title, meta description, Open Graph copy, FAQ structured data, and sitemap lastmod.
+- Refreshed the article title, meta description, Open Graph copy, FAQ structured data, and sitemap lastmod and matching Last-Modified response date.
 
 ### Verification
 - Confirmed article metadata and JSON-LD parse correctly.
