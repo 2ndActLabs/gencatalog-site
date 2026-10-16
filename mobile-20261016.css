@@ -5,4 +5,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
 /* Public beta entry: one decision, no email collection. */
-dialog{max-height:calc(100dvh - 32px);overflow:auto}dialog .dialog-close{color:var(--ink)}dialog .beta-continue{display:flex;white-space:normal;text-align:center;margin-top:24px;min-height:48px}dialog .desktop-explore{display:block;line-height:1.5;padding:16px 0;color:var(--cobalt-bright)}dialog .trial-note{font-size:14px;margin:8px 0 18px}dialog .setup-link{color:var(--ink-soft);font-size:14px;text-decoration:underline}a:focus-visible,button:focus-visible{outline:2px solid var(--cobalt-bright);outline-offset:4px}
+dialog{max-height:calc(100dvh - 32px);overflow:auto}dialog .dialog-close{color:var(--ink)}dialog .beta-continue{display:flex;white-space:normal;text-align:center;margin-top:24px;min-height:48px}dialog .desktop-explore{display:block;line-height:1.5;padding:16px 0;color:var(--cobalt-bright)}a:focus-visible,button:focus-visible{outline:2px solid var(--cobalt-bright);outline-offset:4px}
