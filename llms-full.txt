@@ -1,10 +1,10 @@
 # GenCatalog: full canonical product reference
 
-Last reviewed: 2026-08-10
+Mobile and supported-source references reviewed: 2026-10-16
 
 ## Product
 
-GenCatalog is a local-first desktop application and Chrome extension for organizing AI-generated images and videos. It keeps the media, prompt, source, model or workflow context, notes, tags, ratings, collections, and other available generation metadata together in a searchable visual library.
+GenCatalog is a local-first library for organizing AI-generated images and videos. It includes a Mac and Windows desktop application, a Chrome capture extension, and an iPhone and iPad companion in public TestFlight beta. It keeps the media, prompt, source, model or workflow context, notes, tags, ratings, collections, and other available generation metadata together in a searchable visual library.
 
 The desktop application supports macOS and Windows 10/11. The creative library is stored on the customer's computer or chosen external storage. GenCatalog does not upload that library to GenCatalog cloud storage and does not require a GenCatalog account for the library.
 
@@ -35,7 +35,7 @@ GenCatalog supports the following sources and workflows. Capture and metadata de
 - Higgsfield: https://gencatalog.app/higgsfield
 - Digen: https://gencatalog.app/digen
 - Gemini: https://gencatalog.app/faq#gemini
-- GPT Image: https://gencatalog.app/faq#gpt-image
+- ChatGPT / GPT Image: https://gencatalog.app/faq#gpt-image
 - Rogue Studio: https://gencatalog.app/faq#rogue-studio
 - Dzine: https://gencatalog.app/faq#dzine
 - ComfyUI outputs and embedded workflow metadata: https://gencatalog.app/comfyui-workflow-viewer
@@ -48,12 +48,14 @@ The complete platform reference is maintained at:
 
 ## Local-first privacy model
 
-Captured and imported media, prompts, thumbnails, tags, notes, collections, and catalog data stay on the customer's machine or chosen external storage. GenCatalog is not a hosted gallery, does not provide cloud sync for the creative library, and does not require a GenCatalog account for library access.
+Captured and imported media, prompts, thumbnails, tags, notes, collections, and catalog data stay on the customer's machine or chosen external storage. Selected originals can also be explicitly saved to the companion device for offline viewing. GenCatalog is not a hosted gallery, does not provide cloud sync for the creative library, and does not require a GenCatalog account for library access.
 
 Canonical privacy details: https://gencatalog.app/privacy
 
 ## Core workflows
 
+- Browse a desktop library on iPhone or iPad, including an adaptive iPhone Duo layout: https://gencatalog.app/mobile
+- Connect a mobile device and keep selected originals available offline: https://gencatalog.app/support#mobile
 - Recover and search a scattered AI library: https://gencatalog.app/rescue-your-ai-library
 - Import existing local AI media: https://gencatalog.app/local-ai-media-import
 - Browse ComfyUI workflow metadata: https://gencatalog.app/comfyui-workflow-viewer
@@ -72,6 +74,10 @@ Canonical privacy details: https://gencatalog.app/privacy
 ## iPhone and iPad companion beta
 
 A free public TestFlight beta is available for iPhone and iPad, with an adaptive layout designed for iPhone Duo. It requires GenCatalog for Mac or Windows and an existing library to connect. Browse creations and their available prompts/details, play videos, and explicitly keep selected originals on device for offline use. Favoriting alone does not download an original. A reachable, awake desktop running GenCatalog is required for refresh and unsaved media; remote access requires separate Tailscale configuration. New capture and import remain desktop workflows.
+
+On iPhone, landscape video playback uses a full-screen layout. On iPad and an unfolded iPhone Duo, a wider layout places artwork alongside prompts and details. The Duo layout adapts as the available display space changes.
+
+The companion browses an existing desktop library; it is not an AI image generator or a mobile capture/import tool. The app also offers a clearly labeled sample catalog for exploration before connecting.
 
 - Mobile overview and beta entry: https://gencatalog.app/mobile
 - Connection and troubleshooting: https://gencatalog.app/support#mobile
