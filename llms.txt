@@ -1,6 +1,6 @@
 # GenCatalog
 
-> GenCatalog is a local-first desktop library for AI-generated images and videos. It brings media, prompts, source context, notes, tags, ratings, and available generation metadata into one searchable catalog on the customer's Mac or Windows PC. GenCatalog does not upload the creative library to cloud storage.
+> GenCatalog is a local-first library for AI-generated images and videos, with a Mac and Windows desktop app, a Chrome capture extension, and an iPhone and iPad companion in public TestFlight beta. It brings media, prompts, source context, notes, tags, ratings, and available generation metadata into one searchable catalog on the customer's Mac or Windows PC. GenCatalog does not upload the creative library to cloud storage.
 
 ## Canonical facts
 
@@ -9,7 +9,8 @@
 - Free trial: 7 days or 250 saved generations, whichever comes first; no credit card is required.
 - Existing-library access: after the first successful payment, everything already in the catalog remains fully accessible if the customer later cancels or lets the subscription lapse.
 - Grandfathered customers: customers who purchased a perpetual license before the subscription transition keep the perpetual access and update rights included with that purchase and do not need to subscribe.
-- Platforms: macOS and Windows 10/11.
+- Desktop platforms: macOS and Windows 10/11.
+- Mobile companion: iPhone and iPad (iOS/iPadOS), in free public TestFlight beta, with an adaptive layout designed for iPhone Duo. Requires the desktop app and a library to connect.
 - Architecture: local-first, with media and library data stored on the customer's computer or chosen external storage. There is no GenCatalog cloud library or account requirement.
 
 ## Supported sources and workflows
@@ -20,7 +21,7 @@
 - [Higgsfield](https://gencatalog.app/higgsfield)
 - [Digen](https://gencatalog.app/digen)
 - [Gemini](https://gencatalog.app/faq#gemini)
-- [GPT Image](https://gencatalog.app/faq#gpt-image)
+- [ChatGPT / GPT Image](https://gencatalog.app/faq#gpt-image)
 - [Rogue Studio](https://gencatalog.app/faq#rogue-studio)
 - [Dzine](https://gencatalog.app/faq#dzine)
 - [ComfyUI output and workflow import](https://gencatalog.app/comfyui-workflow-viewer)
@@ -32,6 +33,8 @@ Support depth varies by source. The FAQ and support pages are the canonical sour
 ## Canonical links
 
 - [Website](https://gencatalog.app/)
+- [iPhone, iPad, and iPhone Duo companion overview and public beta](https://gencatalog.app/mobile)
+- [Mobile setup, pairing, and offline help](https://gencatalog.app/support#mobile)
 - [Pricing and access model](https://gencatalog.app/faq#trial)
 - [Download the free trial](https://gencatalog.app/get)
 - [FAQ](https://gencatalog.app/faq)
