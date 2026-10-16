@@ -40,3 +40,10 @@ Support depth varies by source. The FAQ and support pages are the canonical sour
 - [Release notes](https://gencatalog.app/release-notes)
 - [Privacy policy](https://gencatalog.app/privacy)
 - [Full product reference](https://gencatalog.app/llms-full.txt)
+
+## iPhone and iPad companion beta
+
+A free public TestFlight beta is available for iPhone and iPad, with an adaptive layout designed for iPhone Duo. It requires GenCatalog for Mac or Windows and an existing library to connect. Browse creations and their available prompts/details, play videos, and explicitly keep selected originals on device for offline use. Favoriting alone does not download an original. A reachable, awake desktop running GenCatalog is required for refresh and unsaved media; remote access requires separate Tailscale configuration. New capture and import remain desktop workflows.
+
+- Mobile overview and beta entry: https://gencatalog.app/mobile
+- Connection and troubleshooting: https://gencatalog.app/support#mobile

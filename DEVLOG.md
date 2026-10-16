@@ -2152,3 +2152,15 @@ slogan. Trial files stay on disk; permanent in-app access begins after the
 first successful payment.
 
 ---
+
+## 2026-10-16 — Public iPhone/iPad beta launch
+
+Daniel authorized publishing the approved mobile landing-page design, a homepage announcement, public TestFlight enrollment without an email gate, and mobile support instructions. App Store Connect now has Public Beta with build 0.1.0 (7) Testing and the open invitation https://testflight.apple.com/join/S3XJrRrW. No optional enrollment limit was added, consistent with the final request for anyone to join. First Beta retains its three invited testers; build 6 was expired at Daniel's explicit request.
+
+Files: index.html and mobile-announcement-20261016.css add the homepage entry; mobile.html plus mobile-20261016.css, mobile-base-20261016.css, mobile-fonts-20261016.css and mobile-assets/ preserve the accepted preview with a working native prerequisite dialog, TestFlight and desktop paths, free/no-card explanation, and support link. Assets are unchanged existing simulator screenshots and local fonts, not new device acceptance. support.html adds native setup, pairing troubleshooting, large-library update, offline originals, device layouts, Tailscale boundaries, and a separate browser-access explanation. sitemap.xml, functions/_middleware.js (date map only), llms.txt and llms-full.txt add the canonical mobile route and refresh modified-page dates.
+
+Validation: five viewport widths (320/390/768/950/1440), loaded fonts/images, no horizontal overflow or JS errors, device tabs and keyboard selection, both join actions, Escape dismissal and focus return, reduced motion, homepage announcement/nav non-overlap, and support layout passed. Settled homepage and mobile/support/dialog screenshots visually inspected. Public TestFlight page opened independently and displayed GenCatalog with View in TestFlight. Required crawl freshness, HTML validator, and version-surface/live-download checks passed. Desktop version remains 5.16.95.
+
+Design trace: reused Interface Craft Layout & Alignment and Less, but Better plus ui-resource-check: existing identity and screenshots, one lightweight announcement, one prerequisite decision, no email form or new component framework. Apple-native skills not applied to this website-only scope; app onboarding changes remain separate. The trial retention sentence follows Daniel's explicit correction in this conversation; historical desktop ownership copy elsewhere was not rewritten.
+
+Source: fresh clone of current origin/main e51c3c1 because canonical site checkout has unrelated WIP and linked-worktree creation hit a local pack-file I/O failure. Failed worktree registration left no listed worktree; no unrelated files were altered. Prepared for publication via normal GitHub/Cloudflare Pages workflow. Post-deployment verification is recorded in the task workspace website-beta-preview/README.md and launch-verification/.

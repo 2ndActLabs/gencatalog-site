@@ -11,8 +11,8 @@
   </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenCatalog Support: Dzine, Arcana, ComfyUI, Grok Favorites &amp; Setup</title>
-    <meta name="description" content="Set up GenCatalog, scan Dzine projects, capture Arcana Labs generations, import ComfyUI output folders, save supported AI media, scan Grok favorites, and troubleshoot platform workflows.">
+    <title>GenCatalog Support: Desktop, iPhone &amp; iPad Setup</title>
+    <meta name="description" content="Set up GenCatalog on desktop, connect the iPhone and iPad companion, keep creations offline, and troubleshoot pairing, capture, and platform workflows.">
     <link rel="canonical" href="https://gencatalog.app/support" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -21,8 +21,8 @@
     <meta name="theme-color" content="#0d0f13" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gencatalog.app/support" />
-    <meta property="og:title" content="GenCatalog Support: Dzine, Arcana, ComfyUI, Grok Favorites &amp; Setup" />
-    <meta property="og:description" content="Set up GenCatalog, scan Dzine projects, capture Arcana Labs generations, import ComfyUI output folders, save supported AI media, scan Grok favorites, and troubleshoot platform workflows." />
+    <meta property="og:title" content="GenCatalog Support: Desktop, iPhone &amp; iPad Setup" />
+    <meta property="og:description" content="Set up GenCatalog on desktop, connect the iPhone and iPad companion, keep creations offline, and troubleshoot pairing, capture, and platform workflows." />
     <meta property="og:image" content="https://gencatalog.app/og-image-v5.jpg" />
   <script type="application/ld+json">
   {
@@ -496,7 +496,7 @@
         <a href="#hidden">Hidden Items</a>
         <a href="#trash">Trash &amp; Deletion</a>
         <a href="#duplicates">Duplicate Detection</a>
-        <a href="#mobile">Mobile Access</a>
+        <a href="#mobile">iPhone, iPad &amp; Mobile Access</a>
         <div class="sidebar-label">Account</div>
         <a href="#license">Subscription &amp; Activation</a>
         <a href="#trial">Free Trial</a>
@@ -505,6 +505,7 @@
     <main class="content">
         <div class="page-label">Support Guide</div>
         <h1>GenCatalog Support and Setup Guide</h1>
+        <p><a href="#mobile">Setting up the iPhone or iPad app? Start here →</a></p>
         <p class="intro">A complete guide to importing, capturing, organizing, and browsing your AI-generated content across local files, ComfyUI, <a href="/grok">Grok Imagine</a>, Arcana Labs, Gemini, GPT Image, Rogue Studio, Dzine, <a href="/higgsfield">Higgsfield</a>, <a href="/midjourney">Midjourney</a>, <a href="/digen">Digen</a>, and Venice.ai.<br>If Grok favorites are not loading, not showing, or saved images/videos disappeared, start with the recovery and backup links below.<br><a href="/release-notes">See latest release notes and update details.</a></p>
         <form class="support-search" role="search">
             <label for="support-search-input">Search support</label>
@@ -1333,12 +1334,35 @@
         </div>
 
         <div class="section" id="mobile">
-            <h2>Mobile Access</h2>
-            <h3>On Your Home Network</h3>
-            <p>Your catalog is accessible from any device on your Wi-Fi. GenCatalog shows a QR code in the catalog sidebar — scan it with your phone to open your catalog instantly. Or type your Mac's local IP (shown in the sidebar) into your phone's browser followed by <code>:8080</code>.</p>
-            <h3>From Anywhere</h3>
-            <p>Install <a href="https://tailscale.com" target="_blank">Tailscale</a> (free) on both your Mac and phone. Once set up, you can access your full catalog from anywhere in the world — coffee shop, travel, anywhere — as long as your Mac is on and running GenCatalog.</p>
-            <div class="note"><strong>Note:</strong> Your Mac needs to stay awake for remote access. Consider disabling sleep in System Settings → Battery.</div>
+            <h2>GenCatalog for iPhone and iPad</h2>
+            <p>The mobile app is a companion to <strong>GenCatalog for Mac or Windows</strong>. It lets you browse your existing creations, revisit their prompts and details, play videos, and keep selected originals on your device. Capture and import new creations using the desktop app and its supported workflows.</p>
+            <p><a href="/mobile">Explore the mobile app and join the free TestFlight beta →</a></p>
+            <h3>Connect your library</h3>
+            <ol>
+                <li>Install the latest GenCatalog on your Mac or Windows computer and open your library. Keep the computer awake and GenCatalog running.</li>
+                <li>Connect your iPhone or iPad to the same Wi-Fi network as your computer. Avoid a guest network that prevents devices from reaching one another.</li>
+                <li>On your computer, select the phone button to display the pairing QR code.</li>
+                <li>On your iPhone or iPad, open GenCatalog and choose <strong>Connect your computer</strong>, then <strong>Scan pairing code</strong>. Allow camera and local-network access when requested.</li>
+                <li>Scan the code shown by GenCatalog. Connection begins automatically after a recognized code. Keep the app open while the first library sync finishes; a large library may take longer.</li>
+            </ol>
+            <p>You can also use <strong>Or paste the pairing link</strong> on the connection screen and choose <strong>Connect to my library</strong>. A pairing link grants access to your library: do not publish it or include it in a support screenshot.</p>
+            <h3>What syncs, and what works offline?</h3>
+            <p>The app loads library information such as prompts and details. It does not download every original image and video during setup. Your computer must be awake, running GenCatalog, and reachable to refresh your library or load originals that are not already on your device. Keep any external drive containing your library connected.</p>
+            <p>To keep an original available offline, open a creation and choose <strong>Keep on Device</strong>, then wait for the download to finish. Use <strong>On this device</strong> in the catalog to find local copies. Marking something as a favorite does not download it automatically. Removing a local copy does not delete the original on your computer.</p>
+            <h3>iPhone, iPad, and iPhone Duo</h3>
+            <p>On iPhone, rotate to landscape for full-screen video. On iPad, a wide layout puts artwork beside its prompt and details; choose <strong>Full screen</strong> to focus on the work. The layout is also designed for iPhone Duo: unfold for artwork and details together, and fold closed to continue in a compact view.</p>
+            <h3>If pairing does not finish</h3>
+            <ul>
+                <li><strong>The camera does not open:</strong> check GenCatalog’s camera permission in your device’s Settings, or use the pairing-link option.</li>
+                <li><strong>The camera opens but does not recognize the code:</strong> show the current pairing code from GenCatalog on your computer, keep the whole code visible, and try moving the device slightly farther back. You can use the pairing-link option instead.</li>
+                <li><strong>The camera closes but the library does not open:</strong> look for a syncing count or error. Check local-network permission, that both devices can reach each other, and that GenCatalog is still running on your computer. A firewall may need to allow GenCatalog on your private network.</li>
+                <li><strong>A large library fails to connect:</strong> update GenCatalog in TestFlight. The latest beta removes the earlier 100,000-item limit. Let the initial sync finish before assuming the scan failed.</li>
+            </ul>
+            <p>You do not need to uninstall the app or delete your saved items to report a problem. Use TestFlight feedback or email <a href="mailto:support@gencatalog.app">support@gencatalog.app</a> with your device, app build, whether the camera stays open or closes, and any sync count or error you see. Do not send pairing codes or private library content.</p>
+            <h3>Away from your home network</h3>
+            <p>Downloaded originals remain available offline. For a live connection away from home, you can configure <a href="https://tailscale.com" target="_blank" rel="noopener noreferrer">Tailscale</a> on both devices. In the app’s connection screen, expand <strong>Connect through Tailscale</strong> and enter your computer’s Tailscale address and GenCatalog port. A pairing link is still required, and your computer must remain awake with GenCatalog running. GenCatalog does not provide a hosted cloud library or automatic internet relay.</p>
+            <h3>Using a mobile browser instead</h3>
+            <p>The desktop app also offers browser access on your local network. Open the local address shown by GenCatalog in your phone or tablet’s browser. This is separate from installing the native iPhone and iPad app through TestFlight.</p>
         </div>
 
         <div class="section" id="license">
