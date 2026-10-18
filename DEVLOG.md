@@ -41,6 +41,12 @@ historical invalid labels as unknown; that service is not changed or deployed
 by this website PR. Channel labels do not authenticate human traffic or prove
 an install, unique person, purchase, or original discovery.
 
+Delivery: PR83, https://github.com/2ndActLabs/gencatalog-site/pull/83.
+Runtime commit bbd26b4 passes the privacy CI and Pages preview check. This is
+a review preview, not production publication. Companion PRs: GrokCatalog/246
+and gencatalog-ops/4. Next: Daniel reviews coordinated production rollout;
+separate download-service server validation remains a recommended follow-up.
+
 ## 2026-10-15 — Approved extension release notes
 
 Daniel confirmed extension 5.143 is live and approved publishing the reviewed
