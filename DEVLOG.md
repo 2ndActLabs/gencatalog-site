@@ -1,3 +1,52 @@
+## 2026-10-18 — Download and checkout privacy correction
+
+Daniel approved this fix together with annual accounting and weekly cohort
+reporting. Preserved the existing download presentation, Mac/Windows selection,
+manual download mode and mobile handoff.
+
+- `get.html`: remove Google Analytics initialization and URL-bearing download
+  events; set no-referrer; forward only the fixed download labels.
+- `analytics.js`: replace persistent first/last-page and arbitrary campaign
+  tracking with allowlisted link labels; purge the old local attribution key
+  without reading it; strip identifying, URL and free-form checkout fields;
+  apply the same four-field purchase-entry contract as the desktop.
+- `scripts/test-download-privacy.mjs`: execute the real helper and inline
+  handoff code against hostile queries and referrers; verify Windows, Mac,
+  mobile and manual behavior, no storage writes or analytics network calls,
+  checkout field reduction and prototype-name handling.
+- `.github/workflows/download-privacy.yml`: enforce these checks on PRs and
+  main without production mutations.
+- `DEVLOG.md`: this source, validation and delivery record.
+
+Checks pass: source privacy/runtime regression; crawl freshness (27 URLs and
+indexable files); HTML validator; version alignment and live Mac/Windows
+artifact URLs (HTTP 200); whitespace. Cross-project checkout verification
+passes all five entry points. Complete Git history was fetched so the crawl
+check could use real page dates rather than shallow-clone fallback dates.
+
+The dirty primary checkout and unrelated edits were preserved. A failed clean
+worktree checkout encountered existing object-pack read timeouts; this fresh
+clone starts at current origin/main. No public copy/version bump or customer
+content was changed. Other pages' separate Google Analytics initializers are
+outside this download-path correction and have not been removed. Prepared and
+tested for review; no production deployment has been performed.
+
+Follow-up dashboard diagnosis, October 18: the live aggregate endpoint contains
+12 requests under two arbitrary channel labels, mirrored in two arbitrary
+surface labels. These are untrusted request metadata, not new acquisition
+categories or 24 separate requests. The old helper accepted free-form inbound
+channel/surface parameters. The new website helper blocks that route, but the
+separate downloads service must also enforce server-side categories and group
+historical invalid labels as unknown; that service is not changed or deployed
+by this website PR. Channel labels do not authenticate human traffic or prove
+an install, unique person, purchase, or original discovery.
+
+Delivery: PR83, https://github.com/2ndActLabs/gencatalog-site/pull/83.
+Runtime commit bbd26b4 passes the privacy CI and Pages preview check. This is
+a review preview, not production publication. Companion PRs: GrokCatalog/246
+and gencatalog-ops/4. Next: Daniel reviews coordinated production rollout;
+separate download-service server validation remains a recommended follow-up.
+
 ## 2026-10-15 — Approved extension release notes
 
 Daniel confirmed extension 5.143 is live and approved publishing the reviewed
