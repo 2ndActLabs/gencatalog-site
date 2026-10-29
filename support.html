@@ -671,7 +671,7 @@
             <ul>
                 <li><strong>Imagine and Agent Mode creations:</strong> choose <strong>Grok Image + Agent Mode</strong>. This checks Grok's generated-media library without scanning the chat-media feed.</li>
                 <li><strong>Regular chat creations:</strong> choose <strong>Chat boxes only</strong>. This checks the chat media Grok makes available, rather than the Imagine and Agent Mode library.</li>
-                <li><strong>A mix of both:</strong> choose <strong>All Grok media</strong> for the broadest available scan.</li>
+                <li><strong>A mix of both:</strong> choose the combined Imagine, Agent Mode and chat source (called <strong>All Grok media</strong> in older versions). This does not include Bot histories.</li>
                 <li><strong>Bot conversations:</strong> choose <strong>Grok Bots only</strong> to scan available Bot histories. Bot histories use this separate source choice.</li>
             </ul>
             <p><strong>What about projects?</strong> A project is a place to organize conversations, not a separate import choice. An image created in an ordinary project chat is still chat media; placing it in a project does not make it an Imagine or Agent Mode creation.</p>
@@ -679,10 +679,15 @@
             <div class="note"><strong>Project-chat filtering update:</strong> Extension 5.140 is available from the Chrome Web Store. It improves filtering of ordinary chat images that Grok also lists in its generated-media library. Source separation depends on the information Grok provides; some items may still be included when their origin cannot be determined.</div>
 
             <h3 id="grok-bots" style="scroll-margin-top:96px;">Saving Images and Videos from Grok Bots</h3>
-            <p>Chrome extension <strong>5.144</strong> adds support for generated media in Bot conversations at <strong>grok.com/bot/…</strong>. While 5.144 is in Chrome Web Store review, this feature is not yet available in the published extension.</p>
+            <p>Chrome extension <strong>5.144</strong> introduced support for generated media in GrokBot conversations at <strong>grok.com/bot/…</strong> in Chrome. This browser integration does not support the separate GrokBot desktop app.</p>
             <p>For an individual save, click the GenCatalog save button on a supported image or video in the Bot conversation. For a bulk import, open a signed-in Grok tab, choose <strong>Settings → Download options → Grok source → Grok Bots only</strong>, then return to the main view and scan. The popup says <strong>Grok Bots</strong>. Click <strong>Download</strong> to save the new items it finds.</p>
             <p>Keep the desktop app and Grok tab open, and stay signed in to the same account until the job finishes. You can close the popup and reopen it to check progress. A completed scan identifies new items; a completed download confirms they were saved. Previously saved and intentionally excluded items stay skipped.</p>
             <p>Supported media includes JPEG and PNG images and MP4 videos up to 32 MB with Grok Imagine generation metadata. Uploads, reference attachments and media without supported generation metadata are skipped. Bot saves do not include exact generation prompts.</p>
+
+            <div class="note"><strong>Availability:</strong> GrokBot support requires <strong>GenCatalog Desktop 5.16.99 or later</strong>. <a href="/get">Download the desktop update for Mac or Windows</a>. Extension <strong>5.145</strong>, with improved recovery and associated chat requests, is available from the Chrome Web Store.</div>
+            <p>In 5.145, a paused Bot job shows <strong>Resume</strong> and keeps its progress. If its original tab was closed, open Grok signed in to the same account and resume. If the account cannot be verified, the job stays paused; switching to a different account does not continue the import.</p>
+            <p>When a Bot output can be reliably linked to a user request, 5.145 preserves that request with its source details. If the saved item has no generation prompt, the request appears as searchable text labeled <strong>Grok Bot chat request (not the exact generation prompt)</strong>. Existing generation prompts are preserved. Short follow-ups remain short; an unavailable or ambiguous request is left blank.</p>
+            <p>To recover requests on existing Bot items in 5.145, scan <strong>Grok Bots only</strong>, then use <strong>Download</strong> if new items were found or <strong>Update saved chat requests</strong> if everything is already saved. Scanning alone does not change saved items. Request recovery leaves the original files, existing prompts and excluded items intact.</p>
 
             <h3>Bulk Downloading Your Favorites</h3>
             <div class="steps">
