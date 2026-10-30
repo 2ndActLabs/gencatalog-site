@@ -1,3 +1,21 @@
+## 2026-10-30 — Desktop 5.16.103 release surfaces
+
+Updated index.html and get.html to desktop 5.16.103 only after both final installers
+were public and byte-verified. release-notes.html describes cross-platform grid
+resolution badges, the logo filter reset, and missing-only Grok re-save reference
+repair. It does not announce extension 5.146 as available: the ZIP is uploaded to
+the publisher draft; review submission/publication are separate states. The fresh-save
+reference-loss fix is separate and is not claimed as released.
+
+All 16 desktop artifact/feed URLs passed final readback, including final stapled
+Mac DMG/ZIP and Windows installer. Evidence: /Users/danieldavis/Dev/builds/release-5-16-103.
+Version/artifact guard, crawl freshness (27 pages), HTML validator, diff checks and
+isolated 390px/1440px release-note layout passed. Existing same-day sitemap and
+Last-Modified dates already match; no unrelated dates or content changed.
+This isolated linked worktree preserves the primary checkout's unrelated edits.
+Next: merge, verify the matching Pages deployment and canonical homepage/get/
+release-notes, and close this release worktree. Codex owns deployment verification.
+
 ## 2026-10-15 — Approved extension release notes
 
 Daniel confirmed extension 5.143 is live and approved publishing the reviewed
