@@ -1,3 +1,16 @@
+## 2026-10-30 — Correct extension-dependent release wording
+
+The 5.16.103 desktop notes now describe only the available cross-platform badges
+and logo filter reset. Removed the same-quality Grok re-save reference-repair claim:
+that workflow requires extension 5.146, uploaded as a publisher draft but not yet
+submitted/published. Desktop 5.16.103 and its updater feeds are published; the
+fresh-save fix remains separate PR257. No product code or version changes.
+
+Changed only release-notes.html and this log. Current same-day sitemap/middleware
+dates remain accurate. Version/artifact guard, crawl freshness, HTML validator and
+diff checks passed. Next: merge, verify matching production deployment and canonical
+release-notes readback, then close this isolated worktree. Codex owns verification.
+
 ## 2026-10-30 — Desktop 5.16.103 release surfaces
 
 Updated index.html and get.html to desktop 5.16.103 only after both final installers
