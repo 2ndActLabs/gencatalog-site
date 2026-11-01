@@ -1,3 +1,22 @@
+## 2026-11-01 — Explain desktop 5.16.105 in customer language
+
+Rewrote only the 5.16.105 release entry after Daniel flagged “native” and
+“companion” as unexplained jargon. The entry now explains what the iPhone/iPad
+app does, how keeping library filenames helps when sharing originals or saving
+to Files, which versions are required on each device, and why the desktop-only
+workflow is unchanged. The October 30 phone/tablet distribution limitation is
+explicitly historical; this correction makes no claim about current TestFlight
+availability. Product scope was checked against the released desktop filename
+field, the original-file share exporter, and the recorded build-14 release proof.
+
+Changed release-notes.html, its sitemap date, its Last-Modified map entry, and
+this log. Existing layout and all other release entries are preserved. The dirty
+primary site checkout is untouched; work uses a clean clone of current main.
+Crawl freshness, HTML middleware validation, sitemap XML, version consistency
+and both public installer URLs passed. Whitespace and production readback are
+checked before closeout. Codex owns publication and verification through the
+existing main-branch deployment/cache-refresh flow.
+
 ## 2026-10-30 — Correct extension-dependent release wording
 
 The 5.16.103 desktop notes now describe only the available cross-platform badges
