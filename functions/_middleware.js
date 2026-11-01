@@ -12,7 +12,7 @@ const LAST_MODIFIED_BY_PATH = Object.freeze({
   "/faq": "2026-10-05",
   "/support": "2026-10-29",
   "/mobile": "2026-10-16",
-  "/release-notes": "2026-10-30",
+  "/release-notes": "2026-11-01",
   "/blog-organize-grok-imagine": "2026-07-28",
   "/blog-grok-favorites-disappeared": "2026-10-05",
   "/blog-download-grok-imagine-favorites": "2026-10-05",
