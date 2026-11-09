@@ -1,3 +1,9 @@
+## 2026-11-08 — Desktop5.16.106 publication
+
+Daniel approved the release copy with a smoother final sentence, and authorized desktop publication. Release notes describe lower desktop memory usage for extension uploads, serialized incoming uploads and support for future phone/tablet sync improvements. Matching mobile update remains upcoming; no claim of crash resolution or extension5.149 availability. Existing5.148 Web Store review untouched.
+
+Only index.html/get.html version surfaces, release-notes.html, sitemap.xml freshness, functions/_middleware.js Last-Modified entries and this log change. Use version helper after exact desktop artifacts are public; validate crawl freshness, HTML validators, artifact/version guard and live production copy via the normal main-branch Pages/cache-refresh workflow. Download artifacts/feed hashes independently verified by desktop publication workflow.
+
 ## 2026-11-01 — Explain desktop 5.16.105 in customer language
 
 Rewrote only the 5.16.105 release entry after Daniel flagged “native” and
