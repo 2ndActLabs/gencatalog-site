@@ -1,3 +1,7 @@
+## 2026-11-08 — Match crawl metadata to merged release date
+
+The production freshness check uses the merged page commit date (November8), while the pre-merge dirty-file check used current UTC (November9). Align only homepage/release-note sitemap and middleware dates with the actual merged page commit. No customer copy/version changes. Re-run normal validators and production deployment/cache refresh; first run42556632653 failed before cache purge and is not counted as successful.
+
 ## 2026-11-08 — Desktop5.16.106 publication
 
 Daniel approved the release copy with a smoother final sentence, and authorized desktop publication. Release notes describe lower desktop memory usage for extension uploads, serialized incoming uploads and support for future phone/tablet sync improvements. Matching mobile update remains upcoming; no claim of crash resolution or extension5.149 availability. Existing5.148 Web Store review untouched.
