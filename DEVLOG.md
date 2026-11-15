@@ -1,3 +1,11 @@
+## 2026-11-15 — Desktop 5.16.108 compact sidebar release
+
+Daniel approved the compact sidebar and requested shipment with customization deferred. Update only index.html/get.html desktop version/download surfaces, release-notes.html with the customer-facing sidebar benefits, sitemap.xml and functions/_middleware.js freshness dates, and this log. Preserve the unrelated dirty primary checkout; this clean release clone comes from current main.
+
+Desktop packages passed final platform/startup/installer checks, exact Mac zoom and keyboard review, and read-only real-catalog filter/sort parity. Site version bump must follow public desktop artifact availability. Required site validation: version/artifact guard, crawl freshness, HTML middleware validators, sitemap XML and diff checks; then matching production Pages/cache-refresh deployment and canonical homepage/get/release-note readback. No customization or Dzine extension release is included.
+
+Prepared site validation passed: all five version surfaces at 5.16.108; both public installers return 200; crawl freshness checks passed for all 27 sitemap/indexable pages; HTML middleware, sitemap XML and whitespace checks passed. Production deployment and public page readback remain the final publication steps.
+
 ## 2026-11-08 — Match crawl metadata to merged release date
 
 The production freshness check uses the merged page commit date (November8), while the pre-merge dirty-file check used current UTC (November9). Align only homepage/release-note sitemap and middleware dates with the actual merged page commit. No customer copy/version changes. Re-run normal validators and production deployment/cache refresh; first run42556632653 failed before cache purge and is not counted as successful.
