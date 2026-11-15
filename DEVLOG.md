@@ -1,3 +1,9 @@
+## 2026-11-15 — Desktop 5.16.110 overview restoration release
+
+Daniel approved the restored collapsible overview and authorized desktop packaging/publication. Paired site scope: release-notes.html, guarded index.html/get.html version updates after public installers are available, and this log. Existing November 15 sitemap/middleware freshness dates are still correct. Preserve the primary checkout's unrelated work; reuse this clean publication clone. Required checks: installer availability, guarded version consistency, crawl freshness, HTML middleware, sitemap XML, production Pages/cache workflow and canonical page readback.
+
+Both public installers return HTTP 200. Guarded version update and consistency/download check, crawl freshness (27 pages), HTML middleware tests, sitemap XML and diff checks passed. Production deployment and canonical readback follow merge.
+
 ## 2026-11-15 — Desktop 5.16.109 sidebar tag contrast correction
 
 Corrective release after Daniel reported black unselected tag labels in 5.16.108. Customer copy describes readable tag names; change only release-notes.html, version/download surfaces in index.html/get.html through the guarded helper, and this log. Existing November 15 sitemap/middleware dates remain correct. Verify public installers before version bump, then version consistency, crawl freshness, HTML middleware, sitemap XML, matching production deployment/cache refresh and canonical readback. No other sidebar behavior, mobile or extension release.
