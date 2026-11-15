@@ -1,3 +1,9 @@
+## 2026-11-15 — Desktop 5.16.109 sidebar tag contrast correction
+
+Corrective release after Daniel reported black unselected tag labels in 5.16.108. Customer copy describes readable tag names; change only release-notes.html, version/download surfaces in index.html/get.html through the guarded helper, and this log. Existing November 15 sitemap/middleware dates remain correct. Verify public installers before version bump, then version consistency, crawl freshness, HTML middleware, sitemap XML, matching production deployment/cache refresh and canonical readback. No other sidebar behavior, mobile or extension release.
+
+Both public installers return HTTP 200. Guarded version update, all version surfaces/download checks, crawl freshness (27 pages), HTML middleware tests, sitemap XML and diff checks passed. Matching production deployment and canonical readback remain post-merge checks.
+
 ## 2026-11-15 — Desktop 5.16.108 compact sidebar release
 
 Daniel approved the compact sidebar and requested shipment with customization deferred. Update only index.html/get.html desktop version/download surfaces, release-notes.html with the customer-facing sidebar benefits, sitemap.xml and functions/_middleware.js freshness dates, and this log. Preserve the unrelated dirty primary checkout; this clean release clone comes from current main.
