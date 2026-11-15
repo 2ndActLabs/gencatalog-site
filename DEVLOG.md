@@ -1,3 +1,9 @@
+## 2026-11-15 — Desktop 5.16.111 paired release preparation
+
+Authorized by Daniel's desktop shipment request. Scope: release notes, guarded index/get version surfaces, and this log. November15 freshness dates remain current. Copy describes compact overview counts/activity, selected Favorites, and desktop support for the matching mobile update still in testing. Version helper waits for public artifacts. Required checks: version/artifact guard, crawl freshness, HTML validators, sitemap, Pages/cache workflow and canonical readback. Primary dirty checkout untouched.
+
+Both public installers return200; guarded version update/check, crawl freshness27pages, HTML middleware and sitemap/whitespace checks passed. Deployment and canonical readback remain after merge.
+
 ## 2026-11-15 — Desktop 5.16.110 overview restoration release
 
 Daniel approved the restored collapsible overview and authorized desktop packaging/publication. Paired site scope: release-notes.html, guarded index.html/get.html version updates after public installers are available, and this log. Existing November 15 sitemap/middleware freshness dates are still correct. Preserve the primary checkout's unrelated work; reuse this clean publication clone. Required checks: installer availability, guarded version consistency, crawl freshness, HTML middleware, sitemap XML, production Pages/cache workflow and canonical page readback.
