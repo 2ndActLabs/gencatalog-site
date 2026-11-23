@@ -1,3 +1,9 @@
+## 2026-11-23 — Native iPhone/iPad privacy coverage
+
+Daniel approved this four-file privacy update and public deployment as part of App Store submission. Describe build 20 direct desktop connections, local storage and Keychain, pairing permissions, system biometrics, optional Tailscale and user-directed sharing. Scope existing analytics disclosures to desktop/extension or website. Only privacy.html, privacy freshness in sitemap.xml/functions/_middleware.js and this log change. Preserve unrelated canonical checkout work; this clean publication clone starts from current origin/main.
+
+Validation passed: crawl freshness (27 pages), HTML middleware validators, version/artifact guard (both 5.16.112 installers HTTP 200), sitemap XML, scoped whitespace/diff review. The first network-sandbox artifact probe returned 000; the network-enabled rerun passed. Verify rendered policy and matching production deployment/cache workflow with canonical mobile-policy readback after merge. App Store submission and expedited-review request are separate outcomes.
+
 ## 2026-11-15 — Desktop 5.16.111 paired release preparation
 
 Authorized by Daniel's desktop shipment request. Scope: release notes, guarded index/get version surfaces, and this log. November15 freshness dates remain current. Copy describes compact overview counts/activity, selected Favorites, and desktop support for the matching mobile update still in testing. Version helper waits for public artifacts. Required checks: version/artifact guard, crawl freshness, HTML validators, sitemap, Pages/cache workflow and canonical readback. Primary dirty checkout untouched.

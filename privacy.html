@@ -150,17 +150,29 @@
 
     <main>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: August 10, 2026</p>
+        <p class="last-updated">Last updated: November 23, 2026</p>
 
         <div class="highlight-box">
             <h3>The Short Version</h3>
-            <p><span class="privacy-promise">WE NEVER SEE YOUR PRIVATE LIBRARY INFORMATION.</span> Under no circumstances does GenCatalog product analytics collect or send your images, videos, prompts, filenames, file paths, URLs, tags, notes, collections, account information, license information, thumbnails, hashes, item IDs, generated content, or a persistent device identifier. Your library stays on your machine. Anonymous product analytics contain limited counts about how GenCatalog features are used and whether they work as expected — never your creative work or identity.</p>
+            <p><span class="privacy-promise">WE NEVER SEE YOUR PRIVATE LIBRARY INFORMATION.</span> Under no circumstances does GenCatalog product analytics collect or send your images, videos, prompts, filenames, file paths, URLs, tags, notes, collections, account information, license information, thumbnails, hashes, item IDs, generated content, or a persistent device identifier. Your library stays on your devices. The iPhone and iPad app has no product analytics. Desktop product analytics contain limited counts about how GenCatalog features are used and whether they work as expected — never your creative work or identity.</p>
         </div>
 
         <h2>1. What GenCatalog Is</h2>
-        <p>GenCatalog is a desktop application and Chrome browser extension that helps you save and organize AI-generated images and videos from platforms like Grok Imagine, Gemini, GPT Image, Rogue Studio, Dzine, Midjourney, Higgsfield, Digen, and Venice.ai. It is developed and operated by Second Act Labs ("we", "us", "our").</p>
+        <p>GenCatalog is a desktop application and Chrome browser extension that helps you save and organize AI-generated images and videos from platforms like Grok Imagine, Gemini, GPT Image, Rogue Studio, Dzine, Midjourney, Higgsfield, Digen, and Venice.ai. A native companion for iPhone and iPad lets you browse, curate, download and share your existing desktop library. GenCatalog is developed and operated by Second Act Labs ("we", "us", "our").</p>
 
-        <h2>2. Data the App and Extension Collect</h2>
+        <h2>GenCatalog for iPhone and iPad</h2>
+        <p>The native iPhone and iPad app does not collect data for us and does not include analytics, advertising or crash-upload SDKs. It connects directly to the library on your own computer. Your library is not uploaded to a GenCatalog-hosted archive.</p>
+        <ul>
+            <li><strong>On-device storage:</strong> Pairing credentials are stored in the device Keychain. Library details, cached previews and originals you choose to download are stored in the app's private storage. Managed library files are excluded from app backup.</li>
+            <li><strong>Camera and local network:</strong> Camera access is used to read your computer's pairing QR code; camera images are not sent to us. Local-network access lets the app connect to your computer. Favorites, ratings, tags and collection membership edits are sent to your own connected desktop library.</li>
+            <li><strong>Remote access:</strong> Optional Tailscale access depends on your separately configured Tailscale service and its privacy terms. GenCatalog does not operate an internet relay for your library.</li>
+            <li><strong>App Lock:</strong> Face ID and Touch ID authentication are handled by the operating system. GenCatalog does not receive your biometric data.</li>
+            <li><strong>Copies you choose to share:</strong> Saving to Photos or sharing an original or Recipe Card creates a copy at the destination you choose. The receiving service handles that copy under its own terms. Original files may retain embedded metadata.</li>
+            <li><strong>Removing local data:</strong> You can remove downloaded originals or disconnect and remove a library's local data in the app's settings. Removing a managed download does not delete the original on your computer. Copies already saved to Photos or shared elsewhere remain at those destinations.</li>
+        </ul>
+        <p>Website links open a separate website experience covered by section 6 below. Support messages you choose to send may contain the information you include; avoid sending pairing links or private library content unless needed and intended. The desktop and extension analytics described below are separate from the native mobile app.</p>
+
+        <h2>2. Data the Desktop App and Extension Collect</h2>
         <p>The GenCatalog desktop app and Chrome extension do not collect personal information or browsing history. There is no account, no cloud sync, and no server-side copy of your catalog.</p>
         <p>Anonymous product analytics are on by default only after GenCatalog shows a clear notice. Nothing is recorded before that notice is acknowledged. The notice offers an immediate Turn off analytics choice, and the same control remains available anytime in Settings &gt; Privacy. An explicit earlier opt-out stays off. An older installation that merely inherited the former default-off setting, without any recorded choice, is shown the refreshed notice and remains unable to record until that notice is acknowledged.</p>
         <p>Anonymous analytics are limited to counts and broad categories about app activity, feature use, approximate library-size ranges, settings and maintenance actions, capture reliability, app or extension version, operating-system family, whether a save is an image or video, and whether the one-time Chrome Web Store review request is shown, opened, or dismissed. The review-request count uses only broad catalog-size and license-age ranges plus an allowlisted successful action category. Analytics also include one-time anonymous milestones such as trial start, extension connection, first successful save, first meaningful library-management use, reaching five saves plus library management, purchase intent, license activation attempt or result, trial completion, and broad week-one, week-four, and week-twelve retention checkpoints. Journey timing uses only a trial cohort month and broad age or activation-window ranges. These aggregate milestones cannot be joined into a person-level journey.</p>
@@ -168,7 +180,7 @@
         <p>Second Act Labs never receives your AI images or videos, prompts, filenames, source URLs, tags, notes, collection names, file paths, thumbnails, hashes, item IDs, media IDs, source IDs, generated content, local catalog, generation libraries, account information, or license information through product analytics. <span class="privacy-promise">We never see your private library information. Not when analytics are on. Not under any circumstances.</span></p>
 
         <h2>3. How Your Data Is Stored</h2>
-        <p>All library data generated by GenCatalog, including saved media files, prompts, metadata, thumbnails, tags, notes, and catalog databases, is stored exclusively on your local machine or external storage device. None of that library content is transmitted to our servers or any third-party service.</p>
+        <p>The desktop catalog, including saved media files, prompts, metadata, thumbnails, tags, notes, and catalog databases, is stored on your local machine or external storage device. The mobile companion can keep library details and downloaded originals on your iPhone or iPad as described above. None of that library content is transmitted to our servers or any third-party service.</p>
 
         <h2>4. Chrome Extension Permissions</h2>
         <p>The GenCatalog Chrome extension requests the following permissions, each used solely for its stated purpose:</p>
@@ -182,7 +194,7 @@
         </ul>
 
         <h2>5. Network Communication</h2>
-        <p>The GenCatalog app and extension communicate only with services needed for the functions below:</p>
+        <p>The GenCatalog desktop app and Chrome extension communicate only with services needed for the functions below:</p>
         <ul>
             <li><strong>Your local machine (localhost)</strong>: To send saved media and metadata to the companion desktop app.</li>
             <li><strong>Supported AI platforms</strong>: To read available content and download media files you choose to save from Grok Imagine, Gemini, GPT Image, Rogue Studio, Dzine, Midjourney, Higgsfield, Digen, and Venice.ai.</li>
@@ -190,7 +202,7 @@
             <li><strong>GenCatalog download service (downloads.gencatalog.app)</strong>: To check for and download desktop application updates.</li>
             <li><strong>GenCatalog telemetry endpoint (telemetry.gencatalog.app)</strong>: When anonymous product analytics are enabled after the notice. Payloads contain limited anonymous counts and coarse product-journey milestones, and never include private library information, account information, license information, or a persistent identifier.</li>
         </ul>
-        <p>GenCatalog does not communicate with any other external servers, APIs, or services.</p>
+        <p>The desktop app and Chrome extension do not communicate with other external servers, APIs, or services. Native mobile connections to your own computer are described above.</p>
 
         <h2>6. This Website (gencatalog.app)</h2>
         <p>The website you're reading now is a normal website, and we treat it like one. It uses Google Analytics to count visits and see which pages people find useful — things like which page brought you here and whether you downloaded the app. Google Analytics sets cookies to do this. We don't collect names, email addresses, or accounts through the site, and website analytics never show us anything from inside your app library.</p>
@@ -199,7 +211,7 @@
 
         <h2>7. Third-Party Services</h2>
         <p>Lemon Squeezy is the Merchant of Record for annual subscriptions. It handles checkout, payment, tax, subscription management, and refunds, and supplies license-validation results to GenCatalog's entitlement service. Its handling of payment and customer information is governed by its own privacy policy. We do not receive your full card details.</p>
-        <p>The GenCatalog app and extension do not integrate with advertising networks, social media trackers, or data brokers. Optional app telemetry is sent only to GenCatalog-controlled infrastructure.</p>
+        <p>The GenCatalog desktop app and Chrome extension do not integrate with advertising networks, social media trackers, or data brokers. Optional desktop product telemetry is sent only to GenCatalog-controlled infrastructure. The native iPhone and iPad app has no product telemetry.</p>
 
         <h2>8. Children's Privacy</h2>
         <p>GenCatalog is not directed at children under 13. We do not knowingly collect any information from children.</p>

@@ -23,7 +23,7 @@ const LAST_MODIFIED_BY_PATH = Object.freeze({
   "/save-ai-prompts-locally": "2026-08-10",
   "/ai-generation-backup": "2026-08-10",
   "/guides": "2026-10-05",
-  "/privacy": "2026-08-10",
+  "/privacy": "2026-11-23",
   "/terms": "2026-08-10",
   "/refund": "2026-07-18",
 });
